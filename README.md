@@ -5,8 +5,10 @@ This contains a single lighttpd process with FastCGI support and IIPSrv with Kak
 The entry point is the operations.sh shell script. It will attempt to download a file from a specified S3 bucket which should contain the compiled version of Kakadu. In the version of the fcgi-bin.tar.gz, the IIPSrv has been built against Kakadu binaries that lived in /opt/kakadu/kakadu-7.5, with an .tar.gz created from the /opt folder.
 
 So, kakadu.tar.gz is expected to contain:
+```
 +- kakadu
 	+- kakadu-7.5
+```
 
 When running the Docker container, the AWS credentials to access the S3 bucket must be injected via environment variables.
 The location in S3 of the kakadu.tar.gz is passed as another environment variable.
