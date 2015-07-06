@@ -2,7 +2,7 @@
 
 This contains a single lighttpd process with FastCGI support and IIPSrv with Kakadu. It is exposed outside of the container on port 8080.
 
-The entry point is the operations.sh shell script. It will attempt to download a file from a specified S3 bucket which should contain the compiled version of Kakadu. In the version of the fcgi-bin.tar.gz, the IIPSrv has been built against Kakadu binaries that lived in /opt/kakadu/kakadu-7.5, with an .tar.gz created from the /opt folder.
+The entry point is the operations.sh shell script. It will attempt to download a file from a specified S3 bucket which should contain the compiled version of Kakadu. In the version of the fcgi-bin.tar.gz, the IIPSrv has been built against Kakadu binaries that lived in /opt/kakadu/kakadu-7.5, with an .tar.gz created from the /opt folder. Once the .tar.gz has been downloaded, its contents will be extracted below the /opt folder.
 
 So, kakadu.tar.gz is expected to contain:
 ```
