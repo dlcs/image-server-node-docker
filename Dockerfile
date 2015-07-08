@@ -26,6 +26,6 @@ COPY ./fcgi-bin.tar.gz /var/www/localhost/
 
 RUN cd /var/www/localhost && tar -xzvf fcgi-bin.tar.gz
 
-COPY ./operations.sh .
+COPY ./operations.sh /
 
 EXPOSE 8080
