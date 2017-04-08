@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/fractos/image-server-node.svg)](https://microbadger.com/images/fractos/image-server-node "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/fractos/image-server-node.svg)](https://microbadger.com/images/fractos/image-server-node "Get your own version badge on microbadger.com")
+
 # image-server-node-docker
 
 This contains a single lighttpd process with FastCGI support and IIPSrv with Kakadu. It is exposed outside of the container on port 8080.
