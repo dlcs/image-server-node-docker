@@ -1,5 +1,4 @@
 FROM ubuntu
-MAINTAINER Adam Christie <adam.christie@digirati.co.uk>
 
 ENV KAKADULOCATION s3://eu-west-1/dlcs-bootstrap-objects-1/kakadu.tar.gz
 
