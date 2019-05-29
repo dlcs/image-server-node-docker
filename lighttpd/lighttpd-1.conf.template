@@ -8,7 +8,7 @@ server.modules = (
 
 server.document-root        = "/var/www"
 server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
-server.errorlog             = "/var/log/lighttpd/error-1.log"
+server.errorlog             = "/dev/stderr"
 server.pid-file             = "/var/run/lighttpd-1.pid"
 server.username             = "www-data"
 server.groupname            = "www-data"
@@ -42,7 +42,7 @@ fastcgi.server = ( "/fcgi-bin/iipsrv.fcgi" =>
      "max-procs" => 1,
      "bin-path" => "/var/www/localhost/fcgi-bin/iipsrv.fcgi",
      "bin-environment" => (
-        "LOGFILE" => "/tmp/iipsrv-1.log",
+        "LOGFILE" => "/dev/stdout",
         "VERBOSITY" => "5",
         "MAX_IMAGE_CACHE_SIZE" => "${IMAGE_CACHE_SIZE}",
         "FILENAME_PATTERN" => "_pyr_",
