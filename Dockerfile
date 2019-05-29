@@ -20,8 +20,7 @@ RUN ln -s /etc/lighttpd/conf-available/10-fastcgi.conf /etc/lighttpd/conf-enable
 
 COPY lighttpd/lighttpd-1.conf.template /etc/lighttpd/lighttpd-1.conf.template
 
-RUN mkdir -p /var/www/localhost && \
-    ln -sf /dev/stdout /tmp/iipsrv-1.log
+RUN mkdir -p /var/www/localhost
 
 COPY ./fcgi-bin.tar.gz /var/www/localhost/
 
